@@ -4,13 +4,12 @@
 import sys
 import os.path
 
-# Bliblioteca padrao de string
+# Biblioteca padrao de string
 import string
 
 
 # Declarando Classe do analisador Lexico
 class AnalisadorLexico():
-  # ========================== DECLARACAO DE METODOS DA CLASSE
   # Metodo construtor da classe
   def __init__(self):
     self.arquivo_e = "programa.txt"
@@ -26,7 +25,7 @@ class AnalisadorLexico():
   def getSaida(self):
     return self.arquivo_s
 
-  # Metodo que verifica se a entrada eh um delimitador
+  # Verifica se a entrada é um delimitador
   # O metodo find() retorna a posicao do caractere na string de 
   # entrada caso o mesmo seja encontrado
   def ehDelimitador(self, caracter):
