@@ -8,8 +8,9 @@ from analise.semantica import AnalisadorSemantico
 lexico = AnalisadorLexico()
 lexico.analisa()
 # Realizando etapa de analise sintatica
-sintatico = AnalisadorSintatico()
-sintatico.start()
+#sintatico = AnalisadorSintatico()
+#sintatico.start()
 # Realizando etapa de analise semantica
 # semantico = AnalisadorSemantico()
 # semantico.analisa()
+

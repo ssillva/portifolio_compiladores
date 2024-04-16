@@ -12,8 +12,8 @@ import string
 class AnalisadorLexico():
   # Metodo construtor da classe
   def __init__(self):
-    self.arquivo_e = "programa.txt"
-    self.arquivo_s = "resp-lex.txt"
+    self.arquivo_e = "arq_origem\\programa.txt"
+    self.arquivo_s = "arq_destino\\resp-lex.txt"
 
   # Metodo para mudar arquivo de entrada
   def mudaEntrada(self, string):

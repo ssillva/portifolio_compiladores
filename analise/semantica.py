@@ -6,15 +6,15 @@ import os.path
 import string
 
 
-
 # Declarando Classe do Analisador Semantica
 class AnalisadorSemantico():
       # ========================== DECLARACAO DE METODOS DA CLASSE
   # Metodo construtor da classe
   def __init__(self):
-
-    self.arquivo_entrada = "resp-lex.txt"
-    self.arquivo_saida = "resp-sem.txt"
+    #pathtest = os.path.dirname(os.path.dirname(__file__))
+    #pathtest1 = os.path.join(pathtest, "arq_origem\\programa.txt")
+    self.arquivo_entrada = "arq_destino\\resp-lex.txt"
+    self.arquivo_saida = "arq-destino\\resp-sem.txt"
 
     self.tem_erro_semantico = False
 
@@ -308,3 +308,9 @@ class AnalisadorSemantico():
 
     # Fechando arquivo de saida
     self.arquivo_saida.close()
+
+
+if __name__ == '__main__':
+    pathtest = os.path.dirname(os.path.dirname(__file__))
+    pathtest1 = os.path.join(pathtest, "arq_origem\\programa.txt")
+    print (pathtest1)
