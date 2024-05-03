@@ -2,7 +2,7 @@
 import sys
 import os.path
 
-# Bliblioteca padrao de string
+# Biblioteca padrao de string
 import string
 
 
@@ -14,7 +14,7 @@ class AnalisadorSemantico():
     #pathtest = os.path.dirname(os.path.dirname(__file__))
     #pathtest1 = os.path.join(pathtest, "arq_origem\\programa.txt")
     self.arquivo_entrada = "arq_destino\\resp-lex.txt"
-    self.arquivo_saida = "arq-destino\\resp-sem.txt"
+    self.arquivo_saida = "arq_destino\\resp-sem.txt"
 
     self.tem_erro_semantico = False
 

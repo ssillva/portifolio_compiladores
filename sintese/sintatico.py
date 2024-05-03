@@ -3,7 +3,7 @@
 import sys
 import os.path
 
-# Bliblioteca padrao de string
+# Biblioteca padrao de string
 import string
 
 # Biblioteca para juncao de tipos iteraveis - nesse caso juncao de dict
@@ -15,8 +15,8 @@ class AnalisadorSintatico():
   # Metodo construtor da classe
   def __init__(self):
     
-    self.arquivo_entrada = "resp-lex.txt"
-    self.arquivo_saida = "resp-sint.txt"
+    self.arquivo_entrada = "arq_destino\\resp-lex.txt"
+    self.arquivo_saida = "arq_destino\\resp-sint.txt"
 
     self.tem_erro_sintatico = False
 
@@ -573,7 +573,7 @@ class AnalisadorSintatico():
         if ( 'tok207_]' in self.tokens[self.i] ):
           self.next_token()
           retorno_matriz = self.matriz()
-          if(retorno_matriz > 0):
+          if(retorno_matriz):
             vetor_matriz = 2
             retorno_identificador_deriva.append(vetor_matriz)
             retorno_identificador_deriva.append(largura_vetor)
